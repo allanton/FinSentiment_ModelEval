@@ -4,6 +4,24 @@
 
 This repository contains the code for a project that evaluates the performance of OpenAI and llama2 models in sentiment classification of financial_phrasebook headlines. In particular the project examines base/fine(instruct)-tuned GPT and llama2 models and compares their performance across one/few-shot prompting methods.
 
+## Key Results
+
+| **Model**                          | **Type**      | **Accuracy** | **F1** | **Accuracy Improvement (%)** | **F1 Improvement (%)** |
+| ---------------------------------- | ------------- | ------------ | ------ | --------------------------- | ---------------------- |
+| GPT 4                              | Zero-Shot     | 0.83         | 0.83   | —                           | —                      |
+|                                    | Few-Shot      | 0.85         | 0.84   | 2.41                        | 1.2                    |
+|                                    | Fine-Tuning   | —            | —      | —                           | —                      |
+| GPT 3.5                            | Zero-Shot     | 0.78         | 0.77   | —                           | —                      |
+|                                    | Few-Shot      | 0.83         | 0.83   | 6.41                        | 7.79                   |
+|                                    | Fine-Tuning   | **0.88**     | **0.88** | **12.82**                  | **14.29**              |
+| Llama-2 13B <br/> 4-bit            | Zero-Shot     | 0.75         | 0.74   | —                           | —                      |
+|                                    | Few-Shot      | 0.75         | 0.74   | 0                           | 0                      |
+|                                    | Fine-Tuning   | 0.8          | 0.79   | 6.67                        | 6.76                   |
+| Llama-2 7B <br/> 4-bit             | Zero-Shot     | 0.47         | 0.46   | —                           | —                      |
+|                                    | Few-Shot      | 0.43         | 0.41   | -8.51                       | -10.87                 |
+|                                    | Fine-Tuning   | 0.65         | 0.6    | **38.3**                    | **30.43**              |
+
+
 ## Data Sources
 
 - `all-data.csv`: This dataset contains financial headlines and was extracted from [Hugging Face's Financial PhraseBank](https://huggingface.co/datasets/financial_phrasebank).
