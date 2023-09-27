@@ -2,7 +2,7 @@
 
 ## Overview
 
-This repository contains the code for a project that evaluates the performance of OpenAI and llama2 models in sentiment classification of financial_phrasebook headlines. In particular the project examines base/fine(instruct)-tuned GPT and llama2 models and compares their performance across one/few-shot prompting methods.
+This repository contains the code for a project that evaluates the performance of OpenAI and llama2 (4-bit) models in sentiment classification of financial_phrasebook headlines. In particular the project examines base/fine(instruct)-tuned GPT and llama2 models and compares their performance across one/few-shot prompting methods.
 
 ## Key Results
 
